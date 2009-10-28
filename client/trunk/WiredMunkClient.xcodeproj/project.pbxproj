@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F6A0486A84900D96B5E /* WiredMunkClient.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* WiredMunkClient.1 */; };
+		C2059927104560F900638107 /* chipmunk.c in Sources */ = {isa = PBXBuildFile; fileRef = C205990C104560F900638107 /* chipmunk.c */; };
+		C2059928104560F900638107 /* cpArbiter.c in Sources */ = {isa = PBXBuildFile; fileRef = C205990E104560F900638107 /* cpArbiter.c */; };
+		C2059929104560F900638107 /* cpArray.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059910104560F900638107 /* cpArray.c */; };
+		C205992A104560F900638107 /* cpBB.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059912104560F900638107 /* cpBB.c */; };
+		C205992B104560F900638107 /* cpBody.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059914104560F900638107 /* cpBody.c */; };
+		C205992C104560F900638107 /* cpCollision.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059916104560F900638107 /* cpCollision.c */; };
+		C205992D104560F900638107 /* cpHashSet.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059918104560F900638107 /* cpHashSet.c */; };
+		C205992E104560F900638107 /* cpJoint.c in Sources */ = {isa = PBXBuildFile; fileRef = C205991A104560F900638107 /* cpJoint.c */; };
+		C205992F104560F900638107 /* cpPolyShape.c in Sources */ = {isa = PBXBuildFile; fileRef = C205991C104560F900638107 /* cpPolyShape.c */; };
+		C2059930104560F900638107 /* cpShape.c in Sources */ = {isa = PBXBuildFile; fileRef = C205991E104560F900638107 /* cpShape.c */; };
+		C2059931104560F900638107 /* cpSpace.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059920104560F900638107 /* cpSpace.c */; };
+		C2059932104560F900638107 /* cpSpaceHash.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059922104560F900638107 /* cpSpaceHash.c */; };
+		C2059933104560F900638107 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = C2059924104560F900638107 /* cpVect.c */; };
+		C205993E1045615E00638107 /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C20599381045615E00638107 /* message.cpp */; };
+		C205993F1045615E00638107 /* socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C205993A1045615E00638107 /* socket.cpp */; };
+		C209063E102A1CDF0001B212 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C209063D102A1CDF0001B212 /* debug.cpp */; };
+		C2274B8C104061C000AC30BC /* airhockeydemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2274B8A104061C000AC30BC /* airhockeydemo.cpp */; };
+		C25356691015D64800039AEB /* networkobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C25356681015D64800039AEB /* networkobject.cpp */; };
+		C2A8A7AA100B4E15000CCAD0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2A8A79A100B4E15000CCAD0 /* main.cpp */; };
+		C2A8A7B6100B4EAB000CCAD0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A8A7B5100B4EAB000CCAD0 /* OpenGL.framework */; };
+		C2A8A84B100B597A000CCAD0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A8A84A100B597A000CCAD0 /* GLUT.framework */; };
+		C2CE70941015C263001274F6 /* wiredmunkapp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CE708D1015C263001274F6 /* wiredmunkapp.cpp */; };
+		C2DAADA8103D5C76007B9FED /* opposingboxesdemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DAADA6103D5C76007B9FED /* opposingboxesdemo.cpp */; };
+		C2DAADAD103D5CFC007B9FED /* opposingboxesdelaydemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DAADAB103D5CFC007B9FED /* opposingboxesdelaydemo.cpp */; };
+		C2E5F2DC1029799E0051B917 /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2D01029799E0051B917 /* body.cpp */; };
+		C2E5F2DD1029799E0051B917 /* boundingbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2D21029799E0051B917 /* boundingbox.cpp */; };
+		C2E5F2DE1029799E0051B917 /* joint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2D41029799E0051B917 /* joint.cpp */; };
+		C2E5F2DF1029799E0051B917 /* serialisebase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2D61029799E0051B917 /* serialisebase.cpp */; };
+		C2E5F2E01029799E0051B917 /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2D81029799E0051B917 /* shape.cpp */; };
+		C2E5F2E11029799E0051B917 /* space.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2DA1029799E0051B917 /* space.cpp */; };
+		C2E5F2E4102979EB0051B917 /* munktest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E5F2E3102979EB0051B917 /* munktest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* WiredMunkClient.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C205990C104560F900638107 /* chipmunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = chipmunk.c; path = src/wiredmunk/chipmunk/chipmunk.c; sourceTree = "<group>"; };
+		C205990D104560F900638107 /* chipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chipmunk.h; path = src/wiredmunk/chipmunk/chipmunk.h; sourceTree = "<group>"; };
+		C205990E104560F900638107 /* cpArbiter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpArbiter.c; path = src/wiredmunk/chipmunk/cpArbiter.c; sourceTree = "<group>"; };
+		C205990F104560F900638107 /* cpArbiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpArbiter.h; path = src/wiredmunk/chipmunk/cpArbiter.h; sourceTree = "<group>"; };
+		C2059910104560F900638107 /* cpArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpArray.c; path = src/wiredmunk/chipmunk/cpArray.c; sourceTree = "<group>"; };
+		C2059911104560F900638107 /* cpArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpArray.h; path = src/wiredmunk/chipmunk/cpArray.h; sourceTree = "<group>"; };
+		C2059912104560F900638107 /* cpBB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpBB.c; path = src/wiredmunk/chipmunk/cpBB.c; sourceTree = "<group>"; };
+		C2059913104560F900638107 /* cpBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpBB.h; path = src/wiredmunk/chipmunk/cpBB.h; sourceTree = "<group>"; };
+		C2059914104560F900638107 /* cpBody.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpBody.c; path = src/wiredmunk/chipmunk/cpBody.c; sourceTree = "<group>"; };
+		C2059915104560F900638107 /* cpBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpBody.h; path = src/wiredmunk/chipmunk/cpBody.h; sourceTree = "<group>"; };
+		C2059916104560F900638107 /* cpCollision.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpCollision.c; path = src/wiredmunk/chipmunk/cpCollision.c; sourceTree = "<group>"; };
+		C2059917104560F900638107 /* cpCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpCollision.h; path = src/wiredmunk/chipmunk/cpCollision.h; sourceTree = "<group>"; };
+		C2059918104560F900638107 /* cpHashSet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpHashSet.c; path = src/wiredmunk/chipmunk/cpHashSet.c; sourceTree = "<group>"; };
+		C2059919104560F900638107 /* cpHashSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpHashSet.h; path = src/wiredmunk/chipmunk/cpHashSet.h; sourceTree = "<group>"; };
+		C205991A104560F900638107 /* cpJoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpJoint.c; path = src/wiredmunk/chipmunk/cpJoint.c; sourceTree = "<group>"; };
+		C205991B104560F900638107 /* cpJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpJoint.h; path = src/wiredmunk/chipmunk/cpJoint.h; sourceTree = "<group>"; };
+		C205991C104560F900638107 /* cpPolyShape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpPolyShape.c; path = src/wiredmunk/chipmunk/cpPolyShape.c; sourceTree = "<group>"; };
+		C205991D104560F900638107 /* cpPolyShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpPolyShape.h; path = src/wiredmunk/chipmunk/cpPolyShape.h; sourceTree = "<group>"; };
+		C205991E104560F900638107 /* cpShape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpShape.c; path = src/wiredmunk/chipmunk/cpShape.c; sourceTree = "<group>"; };
+		C205991F104560F900638107 /* cpShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpShape.h; path = src/wiredmunk/chipmunk/cpShape.h; sourceTree = "<group>"; };
+		C2059920104560F900638107 /* cpSpace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpSpace.c; path = src/wiredmunk/chipmunk/cpSpace.c; sourceTree = "<group>"; };
+		C2059921104560F900638107 /* cpSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpSpace.h; path = src/wiredmunk/chipmunk/cpSpace.h; sourceTree = "<group>"; };
+		C2059922104560F900638107 /* cpSpaceHash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpSpaceHash.c; path = src/wiredmunk/chipmunk/cpSpaceHash.c; sourceTree = "<group>"; };
+		C2059923104560F900638107 /* cpSpaceHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpSpaceHash.h; path = src/wiredmunk/chipmunk/cpSpaceHash.h; sourceTree = "<group>"; };
+		C2059924104560F900638107 /* cpVect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cpVect.c; path = src/wiredmunk/chipmunk/cpVect.c; sourceTree = "<group>"; };
+		C2059925104560F900638107 /* cpVect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpVect.h; path = src/wiredmunk/chipmunk/cpVect.h; sourceTree = "<group>"; };
+		C2059926104560F900638107 /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = prime.h; path = src/wiredmunk/chipmunk/prime.h; sourceTree = "<group>"; };
+		C20599381045615E00638107 /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = message.cpp; path = src/wiredmunk/network/message.cpp; sourceTree = "<group>"; };
+		C20599391045615E00638107 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = message.h; path = src/wiredmunk/network/message.h; sourceTree = "<group>"; };
+		C205993A1045615E00638107 /* socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = socket.cpp; path = src/wiredmunk/network/socket.cpp; sourceTree = "<group>"; };
+		C205993B1045615E00638107 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socket.h; path = src/wiredmunk/network/socket.h; sourceTree = "<group>"; };
+		C205993D1045615E00638107 /* socketeventhandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socketeventhandler.h; path = src/wiredmunk/network/socketeventhandler.h; sourceTree = "<group>"; };
+		C209063C102A1CDF0001B212 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = src/wiredmunk/debug.h; sourceTree = "<group>"; };
+		C209063D102A1CDF0001B212 /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debug.cpp; path = src/wiredmunk/debug.cpp; sourceTree = "<group>"; };
+		C2274B8A104061C000AC30BC /* airhockeydemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = airhockeydemo.cpp; path = src/airhockeydemo.cpp; sourceTree = "<group>"; };
+		C2274B8B104061C000AC30BC /* airhockeydemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = airhockeydemo.h; path = src/airhockeydemo.h; sourceTree = "<group>"; };
+		C234FF8D100F2C08008C3408 /* WiredMunkClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WiredMunkClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23BC5E7104961D2007F3289 /* positionsampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = positionsampler.h; path = src/wiredmunk/positionsampler.h; sourceTree = "<group>"; };
+		C25356671015D64800039AEB /* networkobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = networkobject.h; path = src/wiredmunk/networkobject.h; sourceTree = "<group>"; };
+		C25356681015D64800039AEB /* networkobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = networkobject.cpp; path = src/wiredmunk/networkobject.cpp; sourceTree = "<group>"; };
+		C2A8A79A100B4E15000CCAD0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		C2A8A7B5100B4EAB000CCAD0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		C2A8A84A100B597A000CCAD0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+		C2CE708D1015C263001274F6 /* wiredmunkapp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wiredmunkapp.cpp; path = src/wiredmunk/wiredmunkapp.cpp; sourceTree = "<group>"; };
+		C2CE708E1015C263001274F6 /* wiredmunkapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wiredmunkapp.h; path = src/wiredmunk/wiredmunkapp.h; sourceTree = "<group>"; };
+		C2DAADA6103D5C76007B9FED /* opposingboxesdemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = opposingboxesdemo.cpp; path = src/opposingboxesdemo.cpp; sourceTree = "<group>"; };
+		C2DAADA7103D5C76007B9FED /* opposingboxesdemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opposingboxesdemo.h; path = src/opposingboxesdemo.h; sourceTree = "<group>"; };
+		C2DAADAB103D5CFC007B9FED /* opposingboxesdelaydemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = opposingboxesdelaydemo.cpp; path = src/opposingboxesdelaydemo.cpp; sourceTree = "<group>"; };
+		C2DAADAC103D5CFC007B9FED /* opposingboxesdelaydemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opposingboxesdelaydemo.h; path = src/opposingboxesdelaydemo.h; sourceTree = "<group>"; };
+		C2E5F2D01029799E0051B917 /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = body.cpp; path = src/wiredmunk/body.cpp; sourceTree = "<group>"; };
+		C2E5F2D11029799E0051B917 /* body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = body.h; path = src/wiredmunk/body.h; sourceTree = "<group>"; };
+		C2E5F2D21029799E0051B917 /* boundingbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = boundingbox.cpp; path = src/wiredmunk/boundingbox.cpp; sourceTree = "<group>"; };
+		C2E5F2D31029799E0051B917 /* boundingbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boundingbox.h; path = src/wiredmunk/boundingbox.h; sourceTree = "<group>"; };
+		C2E5F2D41029799E0051B917 /* joint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = joint.cpp; path = src/wiredmunk/joint.cpp; sourceTree = "<group>"; };
+		C2E5F2D51029799E0051B917 /* joint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = joint.h; path = src/wiredmunk/joint.h; sourceTree = "<group>"; };
+		C2E5F2D61029799E0051B917 /* serialisebase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = serialisebase.cpp; path = src/wiredmunk/serialisebase.cpp; sourceTree = "<group>"; };
+		C2E5F2D71029799E0051B917 /* serialisebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = serialisebase.h; path = src/wiredmunk/serialisebase.h; sourceTree = "<group>"; };
+		C2E5F2D81029799E0051B917 /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shape.cpp; path = src/wiredmunk/shape.cpp; sourceTree = "<group>"; };
+		C2E5F2D91029799E0051B917 /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape.h; path = src/wiredmunk/shape.h; sourceTree = "<group>"; };
+		C2E5F2DA1029799E0051B917 /* space.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = space.cpp; path = src/wiredmunk/space.cpp; sourceTree = "<group>"; };
+		C2E5F2DB1029799E0051B917 /* space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = space.h; path = src/wiredmunk/space.h; sourceTree = "<group>"; };
+		C2E5F2E2102979EB0051B917 /* munktest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = munktest.h; path = src/munktest.h; sourceTree = "<group>"; };
+		C2E5F2E3102979EB0051B917 /* munktest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = munktest.cpp; path = src/munktest.cpp; sourceTree = "<group>"; };
+		C6859E8B029090EE04C91782 /* WiredMunkClient.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WiredMunkClient.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A8A7B6100B4EAB000CCAD0 /* OpenGL.framework in Frameworks */,
+				C2A8A84B100B597A000CCAD0 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* WiredMunkClient */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC8C57100205140025048E /* Chipmunk */,
+				C2CE72101015D05E001274F6 /* Network */,
+				C2340003100F3ACB008C3408 /* WiredMunk */,
+				C2A8A7BD100B4F75000CCAD0 /* Demo */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				C2A8A7B5100B4EAB000CCAD0 /* OpenGL.framework */,
+				C2A8A84A100B597A000CCAD0 /* GLUT.framework */,
+			);
+			name = WiredMunkClient;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2274B8A104061C000AC30BC /* airhockeydemo.cpp */,
+				C2DAADAB103D5CFC007B9FED /* opposingboxesdelaydemo.cpp */,
+				C2DAADA6103D5C76007B9FED /* opposingboxesdemo.cpp */,
+				C2A8A79A100B4E15000CCAD0 /* main.cpp */,
+				C2E5F2E3102979EB0051B917 /* munktest.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C234FF8D100F2C08008C3408 /* WiredMunkClient */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20599401045617900638107 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C2274B8B104061C000AC30BC /* airhockeydemo.h */,
+				C2E5F2E2102979EB0051B917 /* munktest.h */,
+				C2DAADAC103D5CFC007B9FED /* opposingboxesdelaydemo.h */,
+				C2DAADA7103D5C76007B9FED /* opposingboxesdemo.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C2340003100F3ACB008C3408 /* WiredMunk */ = {
+			isa = PBXGroup;
+			children = (
+				C2340004100F3AE1008C3408 /* Headers */,
+				C2340005100F3AE5008C3408 /* Source */,
+			);
+			name = WiredMunk;
+			sourceTree = "<group>";
+		};
+		C2340004100F3AE1008C3408 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C2E5F2D11029799E0051B917 /* body.h */,
+				C2E5F2D31029799E0051B917 /* boundingbox.h */,
+				C209063C102A1CDF0001B212 /* debug.h */,
+				C2E5F2D51029799E0051B917 /* joint.h */,
+				C25356671015D64800039AEB /* networkobject.h */,
+				C23BC5E7104961D2007F3289 /* positionsampler.h */,
+				C2E5F2D71029799E0051B917 /* serialisebase.h */,
+				C2E5F2D91029799E0051B917 /* shape.h */,
+				C2E5F2DB1029799E0051B917 /* space.h */,
+				C2CE708E1015C263001274F6 /* wiredmunkapp.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C2340005100F3AE5008C3408 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2E5F2D01029799E0051B917 /* body.cpp */,
+				C2E5F2D21029799E0051B917 /* boundingbox.cpp */,
+				C209063D102A1CDF0001B212 /* debug.cpp */,
+				C2E5F2D41029799E0051B917 /* joint.cpp */,
+				C25356681015D64800039AEB /* networkobject.cpp */,
+				C2E5F2D61029799E0051B917 /* serialisebase.cpp */,
+				C2E5F2D81029799E0051B917 /* shape.cpp */,
+				C2E5F2DA1029799E0051B917 /* space.cpp */,
+				C2CE708D1015C263001274F6 /* wiredmunkapp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		C2A8A7BD100B4F75000CCAD0 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C20599401045617900638107 /* Headers */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		C2CE72101015D05E001274F6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2CE72171015D08A001274F6 /* Headers */,
+				C2CE72181015D093001274F6 /* Source */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		C2CE72171015D08A001274F6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C20599391045615E00638107 /* message.h */,
+				C205993B1045615E00638107 /* socket.h */,
+				C205993D1045615E00638107 /* socketeventhandler.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C2CE72181015D093001274F6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C20599381045615E00638107 /* message.cpp */,
+				C205993A1045615E00638107 /* socket.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		C2EC8C57100205140025048E /* Chipmunk */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC8C58100205250025048E /* Headers */,
+				C2EC8C591002052A0025048E /* Source */,
+			);
+			name = Chipmunk;
+			sourceTree = "<group>";
+		};
+		C2EC8C58100205250025048E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C205990D104560F900638107 /* chipmunk.h */,
+				C205990F104560F900638107 /* cpArbiter.h */,
+				C2059911104560F900638107 /* cpArray.h */,
+				C2059913104560F900638107 /* cpBB.h */,
+				C2059915104560F900638107 /* cpBody.h */,
+				C2059917104560F900638107 /* cpCollision.h */,
+				C2059919104560F900638107 /* cpHashSet.h */,
+				C205991B104560F900638107 /* cpJoint.h */,
+				C205991D104560F900638107 /* cpPolyShape.h */,
+				C205991F104560F900638107 /* cpShape.h */,
+				C2059921104560F900638107 /* cpSpace.h */,
+				C2059923104560F900638107 /* cpSpaceHash.h */,
+				C2059925104560F900638107 /* cpVect.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C2EC8C591002052A0025048E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C205990C104560F900638107 /* chipmunk.c */,
+				C205990E104560F900638107 /* cpArbiter.c */,
+				C2059910104560F900638107 /* cpArray.c */,
+				C2059912104560F900638107 /* cpBB.c */,
+				C2059914104560F900638107 /* cpBody.c */,
+				C2059916104560F900638107 /* cpCollision.c */,
+				C2059918104560F900638107 /* cpHashSet.c */,
+				C205991A104560F900638107 /* cpJoint.c */,
+				C205991C104560F900638107 /* cpPolyShape.c */,
+				C205991E104560F900638107 /* cpShape.c */,
+				C2059920104560F900638107 /* cpSpace.c */,
+				C2059922104560F900638107 /* cpSpaceHash.c */,
+				C2059924104560F900638107 /* cpVect.c */,
+				C2059926104560F900638107 /* prime.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* WiredMunkClient.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* WiredMunkClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "WiredMunkClient" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiredMunkClient;
+			productInstallPath = "$(HOME)/bin";
+			productName = WiredMunkClient;
+			productReference = C234FF8D100F2C08008C3408 /* WiredMunkClient */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "WiredMunkClient" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* WiredMunkClient */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* WiredMunkClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A8A7AA100B4E15000CCAD0 /* main.cpp in Sources */,
+				C2CE70941015C263001274F6 /* wiredmunkapp.cpp in Sources */,
+				C25356691015D64800039AEB /* networkobject.cpp in Sources */,
+				C2E5F2DC1029799E0051B917 /* body.cpp in Sources */,
+				C2E5F2DD1029799E0051B917 /* boundingbox.cpp in Sources */,
+				C2E5F2DE1029799E0051B917 /* joint.cpp in Sources */,
+				C2E5F2DF1029799E0051B917 /* serialisebase.cpp in Sources */,
+				C2E5F2E01029799E0051B917 /* shape.cpp in Sources */,
+				C2E5F2E11029799E0051B917 /* space.cpp in Sources */,
+				C2E5F2E4102979EB0051B917 /* munktest.cpp in Sources */,
+				C209063E102A1CDF0001B212 /* debug.cpp in Sources */,
+				C2DAADA8103D5C76007B9FED /* opposingboxesdemo.cpp in Sources */,
+				C2DAADAD103D5CFC007B9FED /* opposingboxesdelaydemo.cpp in Sources */,
+				C2274B8C104061C000AC30BC /* airhockeydemo.cpp in Sources */,
+				C2059927104560F900638107 /* chipmunk.c in Sources */,
+				C2059928104560F900638107 /* cpArbiter.c in Sources */,
+				C2059929104560F900638107 /* cpArray.c in Sources */,
+				C205992A104560F900638107 /* cpBB.c in Sources */,
+				C205992B104560F900638107 /* cpBody.c in Sources */,
+				C205992C104560F900638107 /* cpCollision.c in Sources */,
+				C205992D104560F900638107 /* cpHashSet.c in Sources */,
+				C205992E104560F900638107 /* cpJoint.c in Sources */,
+				C205992F104560F900638107 /* cpPolyShape.c in Sources */,
+				C2059930104560F900638107 /* cpShape.c in Sources */,
+				C2059931104560F900638107 /* cpSpace.c in Sources */,
+				C2059932104560F900638107 /* cpSpaceHash.c in Sources */,
+				C2059933104560F900638107 /* cpVect.c in Sources */,
+				C205993E1045615E00638107 /* message.cpp in Sources */,
+				C205993F1045615E00638107 /* socket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = WiredMunkClient;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = WiredMunkClient;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "WiredMunkClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "WiredMunkClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
