@@ -109,7 +109,7 @@ unsigned int Shape::serialise(unsigned char* buffer) {
 			break;
 			
 		case CP_POLY_SHAPE:
-			
+		{
 			// Vertexes and axes
 			unsigned int numVerts = ((cpPolyShape*)_shape)->numVerts;
 			buffer += SerialiseBase::serialise(numVerts, buffer);
@@ -125,7 +125,7 @@ unsigned int Shape::serialise(unsigned char* buffer) {
 			}
 			
 			break;
-			
+		}
 		case CP_NUM_SHAPES:
 			
 			// Undocumented!  Does not seem to be a way to create this shape
@@ -322,11 +322,10 @@ unsigned int Shape::deserialise(BodyVector* bodyVector, BodyVector* staticBodyVe
 			delete axes;
 			
 			break;
-			
+		}
 		case CP_NUM_SHAPES:
 			// No docs, not implemented
 			break;
-		}
 	}
 	
 	// Update common properties
@@ -361,13 +360,14 @@ unsigned int Shape::getSerialisedLength() {
 			break;
 			
 		case CP_POLY_SHAPE:
+		{
 			size += SERIALISED_INT_SIZE;
 			
 			int numVerts = ((cpPolyShape*)_shape)->numVerts;
 			
 			size += numVerts * ((SERIALISED_VECTOR_SIZE * 4) + (SERIALISED_DOUBLE_SIZE * 2));
 			break;
-			
+		}
 		case CP_NUM_SHAPES:
 			// Not implemented, no docs!
 			break;

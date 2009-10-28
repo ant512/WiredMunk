@@ -219,7 +219,7 @@ void WiredMunkApp::sendReady() {
 void WiredMunkApp::handleResponseReceived(const Message& msg) { 
 	switch (msg.getType()) {
 		case Message::MESSAGE_HANDSHAKE:
-			
+		{
 			// Extract data from the message
 			const unsigned char* data = msg.getData();
 			
@@ -232,7 +232,7 @@ void WiredMunkApp::handleResponseReceived(const Message& msg) {
 			Debug::printf("Client ID: %d\n", _clientId);
 			Debug::printf("Client switched to CLIENT_STATE_WAITING_STARTUP\n");
 			break;
-			
+		}
 		case Message::MESSAGE_REJECT:
 			
 			// TODO: Do something useful here
